@@ -1,0 +1,25 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "rm -rf build/ && yarn webpack && cp src/main.html build/",
+    "webpackbuild": "yarn webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "lodash": "^4.17.10",
+    "webpack": "^4.12.0",
+    "yarn": "^1.7.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "style-loader": "^0.21.0",
+    "webpack-cli": "^3.0.8"
+  }
+}
